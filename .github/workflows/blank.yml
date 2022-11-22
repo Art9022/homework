@@ -8,22 +8,18 @@ on:
   pull_request:
     branches: [ "main" ]
 
-jobs:
-  job_one:
-
+jobs: 
+  job_1:
     runs-on: ubuntu-latest
-
     steps:
-    -name: Print hello masage
-     run : echo "Hello World"
-  
+     - name: Print Hello Valodik
+       run: echo "Hello Valodik"
+       
+ 
 
-
-  job_too:
-    
+  job_2:
     runs-on: ubuntu-latest
-
     steps:
-    -name: Print hello masage
-     run : echo "Hello Valodik"
+     - name: Print Hello Gugushik
+       run : echo "Hello Gugushik"
   
