@@ -1,0 +1,27 @@
+# tnain ashxatanq
+#
+#
+name: CI
+
+on:
+
+  push:
+    branches:
+     - master
+
+jobs:
+  my_test:
+   runs-on: ubuntu-latest
+
+   steps:
+     - name: Barev_Valodik
+       run : echo "Barev_Valodik"
+
+  my_test2:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Barev_Gugushik
+        run: echo "Barev Gugushik"
+
+  
