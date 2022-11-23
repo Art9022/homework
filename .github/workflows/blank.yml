@@ -3,6 +3,10 @@
 #
 name: CI
 
+env:
+  APPLICATION_NAME: "MyFlask"
+  DEPLOY_PACKAGE_NAME    : "flask-deploy-ver-${{ githab.sha }}"
+
 on:
 
   push:
@@ -17,6 +21,12 @@ jobs:
      - name: Barev_Valodik
        run : echo "Barev_Valodik"
 
+     - name: Exercure few commands
+       run: |
+         echo "Hello masage1"
+         echo "Hello masage2"
+         echo "Application name: ${{ env.APPLICATION_NAME }}"
+
   my_test2:
     runs-on: ubuntu-latest
     needs: [my_test]
@@ -25,4 +35,5 @@ jobs:
       - name: Barev_Gugushik
         run: echo "Barev Gugushik"
 
-  
+      - name: Printing_Deployment_Masage
+        run: echo "Deploy_pakage name is ${{ env.DEPLOY_PACAGE<NAME }}"
