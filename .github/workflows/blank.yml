@@ -36,4 +36,4 @@ jobs:
         run: echo "Barev Gugushik"
 
       - name: Printing_Deployment_Masage
-        run: echo "Deploy_pakage name is ${{ env.DEPLOY_PACAGE<NAME }}"
+        run: echo "Deploy_pakage name is ${{ env.DEPLOY_PACAGE_NAME }}"
