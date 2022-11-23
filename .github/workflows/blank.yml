@@ -19,6 +19,7 @@ jobs:
 
   my_test2:
     runs-on: ubuntu-latest
+    needs: [my_test]
 
     steps:
       - name: Barev_Gugushik
