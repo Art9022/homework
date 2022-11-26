@@ -17,10 +17,10 @@ jobs:
    runs-on: ubuntu-latest
 
    steps:
-     - name: candition
+     - name: ca
        if:   runner.os == 'Windows'
        run:  echo "Tis operation sistem on the runner is $RUNNER_OS"
 
-     - name: candition 2
+     - name: ca 2
        if:   runner.os != 'windows'
        run:  echo "Tis operation sistem is not windows it is $RUNNER_OS"
