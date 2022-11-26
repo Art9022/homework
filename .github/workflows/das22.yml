@@ -23,4 +23,4 @@ jobs:
 
      - name: candition 2
        if:   runner.os != 'windows'
-       run:  echo "Tis operation sistem is not windows it is $RUNNER.OS"
+       run:  echo "Tis operation sistem is not windows it is ${{env:RUNNER.OS}}"
