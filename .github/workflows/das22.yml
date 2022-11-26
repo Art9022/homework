@@ -17,9 +17,10 @@ jobs:
    runs-on: ubuntu-latest
 
    steps:
-     - name: barev
-       id:   consumer
-       run:  echo a=a >> $GITHUB_OUTPUT
+     - name: candition
+       if:   runner.os == 'Windows'
+       run:  echo "Tis operation sistem on the runner is ${{env:RUNNER.OS}}"
 
-     - name: barev2
-       run: echo ${{steps.consumer.outputs.a}}
+     - name: candition 2
+       if:   runner.os != 'windows'
+       run:  echo "Tis operation sistem is not windows it is $RUNNER.OS"
