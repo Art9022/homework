@@ -1,0 +1,25 @@
+# 
+#
+#
+name: CI
+
+
+
+on:
+
+  push:
+    branches:
+     - main
+
+
+jobs:
+  my_test:
+   runs-on: ubuntu-latest
+
+   steps:
+     - name: barev
+       id:   consumer
+       run:  echo a=a >> $GITHUB_OUTPUT
+
+     - name: barev2
+       run: echo ${{steps.consumer.outputs.a}}
